@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Love Page 💕</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100vh;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(135deg,#ff758c,#ff7eb3);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
+
+.container{
+  width:90%;
+  max-width:420px;
+  text-align:center;
+}
+
+.card{
+  background:rgba(255,255,255,.18);
+  backdrop-filter:blur(12px);
+  border-radius:25px;
+  padding:35px 20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.heart{
+  font-size:70px;
+  animation:beat 1.2s infinite;
+}
+
+h1{
+  margin:15px 0 10px;
+  font-size:30px;
+}
+
+p{
+  font-size:16px;
+  line-height:1.7;
+}
+
+button{
+  margin-top:25px;
+  padding:13px 25px;
+  border:0;
+  border-radius:30px;
+  background:white;
+  color:#ff4f81;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+#message{
+  display:none;
+  margin-top:20px;
+  padding:15px;
+  background:rgba(255,255,255,.2);
+  border-radius:15px;
+}
+
+@keyframes beat{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.2);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="card">
+
+    <div class="heart">❤️</div>
+
+    <h1>My Love Page</h1>
+
+    <p>
+      မင်းအတွက် ကိုယ်တိုင်လုပ်ထားတဲ့<br>
+      ကိုယ်ပိုင်နေရာလေးတစ်ခု 💕
+    </p>
+
+    <button onclick="showMessage()">
+      💌 Message ဖွင့်မယ်
+    </button>
+
+    <div id="message">
+      မင်းကိုပြောချင်တဲ့စကားလေးတွေ ဒီနေရာမှာရေးလို့ရတယ် ❤️
+    </div>
+
+  </div>
+</div>
+
+<script>
+function showMessage(){
+  document.getElementById("message").style.display="block";
+}
+</script>
+
+</body>
+</html>
